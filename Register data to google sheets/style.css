@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg')no-repeat;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #504d4d;
+    user-select: none;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.1em;
+    color: #504d4d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+}
+.navbar .login-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #504d4d;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navbar .login-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+.container{
+    position: relative;
+    padding: 5px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-radius: 10px;
+    transform: translateY(20%);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+h1{
+    text-align: center;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.input-container .material-symbols-outlined{
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-size: 1.2em;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+hr{
+    border: 1px solid #504d4d;
+    margin-bottom: 5px;
+}
+.registerbtn{
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover{
+    color: black;
+    background: none;
+    border: 1px solid #04AA6D;
+    transition: .2s;
+    text-decoration: underline;
+}
+a{
+    color: rgb(3, 18, 32);
+}
+p{
+    text-align: center;
+}
